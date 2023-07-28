@@ -1,0 +1,87 @@
+.header {
+  background: url("../img/hero-bg.jpg") center center/cover no-repeat;
+  padding-bottom: 265px;
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    padding-top: 55px;
+    padding-bottom: 150px;
+  }
+
+  &__logo {
+    margin-right: 135px;
+  }
+
+  &__nav ul {
+    display: flex;
+    gap: 45px;
+  }
+
+  &__nav-item a {
+    color: var(--light-color);
+    font-size: 16px;
+    line-height: 24px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--gold-color);
+    }
+  }
+
+  &__phone {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+  }
+
+  &__info {
+    margin-bottom: 40px;
+  }
+
+  &__time {
+    margin: 0;
+    margin-bottom: 24px;
+    color: var(--light-color);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 1.44px;
+  }
+
+  &__text {
+    margin: 0;
+    color: var(--light-color);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 88px;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid var(--light-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+}
