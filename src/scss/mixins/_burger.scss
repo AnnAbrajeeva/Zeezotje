@@ -1,18 +1,20 @@
 /* stylelint-disable */
 
 @mixin burger {
-  --burger-width: 30px;
-  --burger-height: 30px;
+  --burger-width: 40px;
+  --burger-height: 25px;
   --burger-line-height: 2px;
 
-  position: relative;
+  position: absolute;
   border: none;
   padding: 0;
+  right: 20px;
   width: var(--burger-width);
   height: var(--burger-height);
-  color: #000;
+  color: var(--light-color);
   background-color: transparent;
   cursor: pointer;
+  z-index: 20;
 
   &::before,
   &::after {
@@ -45,6 +47,7 @@
   }
 
   &--active {
+    color: var(--black-color);
     &::before {
       top: 50%;
       transform: rotate(45deg);
