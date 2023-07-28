@@ -5,6 +5,10 @@
 import { mobileCheck } from "./functions/mobile-check";
 
 import { reviewsSlider } from "./components/review-slider";
+import * as modal from './components/modal';
+import * as sendFormData from './components/sendForm';
+import * as toggleMenu from "./components/burger";
+
 // Подключение свайпера
 // import Swiper, { Navigation, Pagination } from 'swiper';
 // Swiper.use([Navigation, Pagination]);

@@ -1,0 +1,33 @@
+<div id="form-modal" class="modal">
+  <div class="modal__content">
+    <button
+      class="btn-reset modal__close"
+      aria-label="Закрыть модальное окно"
+    ></button>
+
+    <h3 class="form__title">Reservation</h3>
+
+    <form id="reserve-form" class="form modal__form">
+      <div class="form__control-wrapper">
+        <input
+          data-name="validate-name"
+          placeholder="Your name"
+          class="form__input"
+          name="username"
+        />
+      </div>
+      <div class="form__control-wrapper">
+        <input
+          type="tel"
+          placeholder="Your phone"
+          class="form__input"
+          data-phone="validate-phone"
+          name="phone"
+        />
+      </div>
+      <textarea name="message" class="form__textarea">Your message</textarea>
+
+      <button id="send" class="btn form__btn" type="submit">Отправить</button>
+    </form>
+  </div>
+</div>

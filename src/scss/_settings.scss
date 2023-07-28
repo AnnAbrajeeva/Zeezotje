@@ -122,3 +122,12 @@ a {
     transition: filter 0.3 ease;
   }
 }
+
+.burger {
+  @include burger;
+  display: none;
+
+  @media (max-width: 1089px) {
+    display: block;
+  }
+}
