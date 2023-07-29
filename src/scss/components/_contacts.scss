@@ -1,0 +1,155 @@
+.contacts {
+  background-color: var(--light-color);
+  padding-top: 101px;
+
+  @include mobile {
+    padding-top: 50px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 96px;
+    margin-bottom: 50px;
+
+    @include mobile {
+      gap: 20px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    color: #000;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 88px;
+
+    @include mobile {
+      text-align: center;
+      font-size: 35px;
+      line-height: 55px;
+    }
+  }
+
+  &__address {
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__address address {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-style: normal;
+
+    @include mobile {
+      gap: 20px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__item-img {
+    width: 64px;
+    height: 64px;
+    background-color: var(--gold-color);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &__item-descr {
+    margin: 0;
+    color: #2e2e2e;
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  &__item-link {
+    margin: 0;
+    color: #2e2e2e;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+  }
+
+  &__input-wrap {
+    display: flex;
+    gap: 19px;
+    width: 100%;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__form-label {
+    width: 100%;
+    color: var(--black-color);
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  &__form-input {
+    width: 100%;
+    display: block;
+    padding: 28px 16px;
+    border: 1px solid #ccc;
+  }
+
+  &__form-textarea {
+    height: 125px;
+    display: block;
+    padding: 28px 16px;
+    border: 1px solid #ccc;
+    width: 100%;
+    color: #808080;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__form-btn {
+    width: 270px;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__map {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 500px;
+    overflow: hidden;
+
+    iframe {
+      width: 100%;
+      max-height: 500px;
+    }
+  }
+}
