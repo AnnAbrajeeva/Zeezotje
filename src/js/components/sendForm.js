@@ -1,12 +1,16 @@
 import { closeModal } from "./modal";
-const submitBtn = document.getElementById('send');
 const form = document.getElementById('reserve-form');
+const formContacts = document.getElementById('contacts__form');
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
   console.log(Array.from(new FormData(form)))
   closeModal();
-  // await sendUserData(form);
+})
+
+formContacts.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  console.log(Array.from(new FormData(form)))
 })
 
 // async function sendUserData(form) {
