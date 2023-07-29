@@ -11,6 +11,10 @@ const reviewsSlider = new Swiper('.swiper', {
     nextEl: '.reviews__arrow--next',
     prevEl: '.reviews__arrow--prev',
   },
+
+  pagination: {
+    el: '.swiper-pagination',
+  }
 });
 
 export {reviewsSlider};

@@ -6,6 +6,7 @@
   --content-width: 1170px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --index: calc(1vh+1vw);
 
   // colors
   --light-color: #fff;

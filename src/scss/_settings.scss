@@ -117,6 +117,14 @@ a {
   line-height: 24px;
   transition: filter 0.3 ease;
 
+  @include tablet {
+    padding: 30px 60px;
+  }
+
+  @media (max-width: 521px) {
+    padding: 20px 40px;
+  }
+
   &:hover {
     filter: brightness(85%);
     transition: filter 0.3 ease;

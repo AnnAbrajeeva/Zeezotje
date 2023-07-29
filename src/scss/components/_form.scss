@@ -3,12 +3,24 @@
   flex-wrap: wrap;
   gap: 30px;
 
+  @include mobile {
+    gap: 15px;
+  }
+
   &__title {
     margin: 0;
     color: var(--black-color);
     font-size: 48px;
     font-weight: 700;
     line-height: 88px;
+
+    @include mobile {
+      font-size: 32px;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 28px;
+    }
   }
 
   &__control-wrapper {
@@ -29,6 +41,10 @@
     background: #ffffff;
     border-radius: 15px;
     width: 100%;
+
+    @include mobile {
+      padding: 18px 20px;
+    }
   }
 
   &__textarea {
@@ -46,6 +62,10 @@
 
     @media (max-width: 721px) {
       margin-top: 0;
+    }
+
+    @include mobile {
+      height: 100px;
     }
   }
 

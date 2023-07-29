@@ -3,10 +3,37 @@
   padding-top: 60px;
   padding-bottom: 173px;
 
+  @include small-tablet {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   &__wrapper {
     display: flex;
     gap: 129px;
     align-items: center;
+
+    @media (max-width: 1191px) {
+      flex-direction: column-reverse;
+    }
+
+    @media (max-width: 473px) {
+      gap: 20px;
+    }
+  }
+
+  &__items {
+    @media (max-width: 1191px) {
+      width: 60%;
+    }
+
+    @media (max-width: 863px) {
+      width: 80%;
+    }
+
+    @media (max-width: 620px) {
+      width: 100%;
+    }
   }
 
   &__item {
@@ -21,15 +48,39 @@
     font-weight: 600;
     line-height: 32px;
     margin-bottom: 10px;
+
+    @media (max-width: 487px) {
+      font-size: 20px;
+      text-align: center;
+    }
   }
 
   &__item-text {
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
     color: var(--black-color);
     font-size: 18px;
     line-height: 32px;
+
+    @media (max-width: 487px) {
+      font-size: 14px;
+      justify-content: center;
+    }
+  }
+
+  &__item-circles {
+    display: flex;
+    gap: 8px;
+    margin: 0 10px;
+
+    @media (max-width: 487px) {
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
   }
 
   &__item-circle {
@@ -38,12 +89,18 @@
     height: 5px;
     background-color: var(--gold-color);
     border-radius: 100%;
-    margin: 0 8px;
   }
 
   &__photo {
     position: relative;
     padding-top: 5px;
+
+    @media (max-width: 473px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      width: 100%;
+    }
   }
 
   &__border {
@@ -51,6 +108,15 @@
     width: 471px;
     height: 502px;
     border: 2px solid var(--gold-color);
+
+    @include small-tablet {
+      width: 250px;
+      height: 300px;
+    }
+
+    @media (max-width: 473px) {
+      display: none;
+    }
   }
 
   &__img {
@@ -64,6 +130,16 @@
     &--right {
       top: 11px;
       right: -100px;
+    }
+
+    @include small-tablet {
+      width: calc(var(--index) * 40);
+      height: 300px;
+    }
+
+    @media (max-width: 473px) {
+      position: static;
+      width: 100%;
     }
   }
 }

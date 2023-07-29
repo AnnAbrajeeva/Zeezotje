@@ -8,8 +8,9 @@ burger.addEventListener("click", () => {
 
 menu.addEventListener("click", (e) => {
   if (
-    e.target.classList.contains("navigation__link") ||
-    e.target.classList.contains("social__link")
+    e.target.classList.contains("header__nav-item") ||
+    e.target.classList.contains("header__icon") ||
+    e.target.classList.contains("header__phone")
   ) {
     burger.classList.remove("burger--active");
     menu.classList.remove("mobile-menu--active");

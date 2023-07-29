@@ -3,6 +3,11 @@
   padding-top: 105px;
   padding-bottom: 109px;
 
+  @include small-tablet {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   &__item {
     display: grid;
     grid-template-columns: 5fr 7fr;
@@ -14,11 +19,28 @@
         order: 2;
         padding-left: 20px;
       }
+
+      @include small-tablet {
+        .advantages__img {
+          order: 2;
+          padding-right: auto;
+        }
+      }
+    }
+
+    @include small-tablet {
+      grid-template-columns: 1fr;
     }
   }
 
   &__text {
     max-width: 470px;
+
+    @include small-tablet {
+      width: 100%;
+      max-width: none;
+      padding-bottom: 20px;
+    }
   }
 
   &__title {
@@ -39,6 +61,10 @@
       height: 2px;
       background-color: var(--gold-color);
     }
+
+    @include mobile {
+      line-height: 40px;
+    }
   }
 
   &__descr {
@@ -55,6 +81,16 @@
     justify-content: center;
     width: 670px;
     height: 560px;
+
+    @media (max-width: 1035px) {
+      width: calc(var(--index) * 20);
+      min-width: 400px;
+      height: auto;
+    }
+
+    @include small-tablet {
+      min-width: auto;
+    }
 
     img {
       width: 100%;

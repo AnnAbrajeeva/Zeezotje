@@ -3,6 +3,11 @@
   padding-top: 220px;
   padding-bottom: 220px;
 
+  @media (max-width: 941px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   &__review {
     position: relative;
     margin: 0 auto;
@@ -13,6 +18,14 @@
       display: block;
       margin: 0 auto;
       margin-bottom: 34px;
+
+      @media (max-width: 941px) {
+        width: 55px;
+      }
+    }
+
+    @media (max-width: 941px) {
+      width: 70%;
     }
   }
 
@@ -24,6 +37,10 @@
     font-size: 36px;
     font-weight: 600;
     line-height: 40px;
+
+    @media (max-width: 941px) {
+      font-size: 25px;
+    }
   }
 
   &__review-text {
@@ -32,6 +49,11 @@
     color: var(--light-color);
     font-size: 16px;
     line-height: 40px;
+
+    @media (max-width: 941px) {
+      font-size: 14px;
+      line-height: 30px;
+    }
   }
 
   &__review-author {
@@ -41,6 +63,10 @@
     font-weight: 600;
     line-height: 40px;
     letter-spacing: 5.88px;
+
+    @media (max-width: 941px) {
+      font-size: 18px;
+    }
   }
 
   &__arrow {
@@ -49,6 +75,10 @@
     transform: translateY(-50%);
     cursor: pointer;
     z-index: 10;
+
+    @include mobile {
+      display: none;
+    }
 
     & svg {
       width: 70px;
@@ -68,6 +98,24 @@
 
     &--next {
       right: 0;
+    }
+  }
+
+  &__pagination {
+    display: none;
+    position: relative;
+    margin-top: 40px;
+
+    .swiper-pagination-bullet {
+      background-color: var(--light-color);
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: var(--gold-color);
+    }
+
+    @include mobile {
+      display: block;
     }
   }
 }
